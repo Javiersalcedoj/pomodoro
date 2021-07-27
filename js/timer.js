@@ -81,17 +81,17 @@ function print (){
                 case count_s < 10:
                     countdown.innerHTML = `0${count_m}:<sup class="second">0${count_s}</sup>`;
                 break;
-                case count_s > 10:
+                case count_s >= 10:
                     countdown.innerHTML = `0${count_m}:<sup class="second">${count_s}</sup>`;
                     break;
             }
             break;
-        case count_m > 10:
+        case count_m >= 10:
             switch (true){
                 case count_s < 10:
                     countdown.innerHTML = `${count_m}:<sup class="second">0${count_s}</sup>`;
                 break;
-                case count_s > 10:
+                case count_s >= 10:
                     countdown.innerHTML = `${count_m}:<sup class="second">${count_s}</sup>`;
                     break;
             }
