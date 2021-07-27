@@ -1,0 +1,108 @@
+.main-setting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 300px;
+  height: 275px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  z-index: 3;
+}
+
+.main-setting .title {
+  margin-bottom: 14px;
+}
+
+.main-setting .title p {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.562);
+}
+
+.main-setting .title img {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.main-setting .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-setting .time p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.main-setting .time form {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 0% 25% 25% 25% 25%;
+      grid-template-columns: 0% 25% 25% 25% 25%;
+  -ms-grid-rows: 40px 40px 40px 20px;
+      grid-template-rows: 40px 40px 40px 20px;
+}
+
+.main-setting .time form label {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 1.5rem;
+  margin: 10px 0px;
+}
+
+.main-setting .time form #pomodoro, .main-setting .time form #s-break, .main-setting .time form #l-break {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 6;
+  height: 30px;
+  margin: 5px 0;
+  padding-left: 7px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #eef1fb;
+}
+
+.main-setting .time form .error {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  margin-top: 5px;
+  font-size: 0.7rem;
+}
+
+.main-setting .time form #time {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  height: 40px;
+  margin: 7px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background: #6c009e;
+  cursor: pointer;
+}
+/*# sourceMappingURL=settings.css.map */

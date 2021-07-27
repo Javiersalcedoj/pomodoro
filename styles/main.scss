@@ -1,0 +1,87 @@
+.main {
+    height: calc(100vh - 70px);
+    flex-direction: column;
+    justify-content: space-around;
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 100px;
+        margin: 0 auto;
+        font-size: 1.8rem;
+        font-weight: 200;
+        text-align: center;
+        color: white;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 50%;
+        max-width: 296.875px;
+        max-height: 500px;
+        .load {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 75vw;
+            height: 75vw;
+            max-width: 300px;
+            max-height: 300px;
+            color: white;
+            border: 4px solid white;
+            border-bottom: 4px solid rgba(255, 0, 0, 0);
+            border-radius: 50%;
+        }
+        .minute{
+            font-size: 7.5rem;
+            font-weight: 100;
+        }
+        .second{
+            font-size: 4rem;
+        }
+        .cycles{
+            display: flex;
+            margin-bottom: 20px;
+            div{
+                width: 7px;
+                height: 7px;
+                margin: 2px;
+                border-radius: 50%;
+            }
+            
+        }
+        .buttons {
+            display: flex;
+            align-content: center;
+            #button {
+                width: 100px;
+                height: 35px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: black;
+                border-radius: 40px;
+                border: none;
+                background-color: white;
+                cursor: pointer;
+            }
+            #button-reload {
+                display: none;
+                width: 40px;
+                height: 35px;
+                margin-left: 10px;
+                border-radius: 40px;
+                border: none;
+                background-color: white;
+                cursor: pointer;
+                background-image: url('../imgs/reloader.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+        }
+    }
+}

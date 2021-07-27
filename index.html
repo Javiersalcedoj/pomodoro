@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pomodoro is a method that helps improve productivity and concentration when performing a task. It is based on concentrating for 25 minutes and then resting for 5 minutes, with longer breaks every four pomodoros.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pomodoro</title>
+        <link rel="shortcut icon" href="./imgs/favico.png">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/tasks.css">
+        <link rel="stylesheet" href="./styles/settings.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="info" id="info">
+                <div class="info-padre">
+                    <h2>Pomodoro</h2>
+                    <p>Pomodoro is a method that helps improve productivity and concentration when performing a task. It is based on concentrating for 25 minutes and then resting for 5 minutes, with longer breaks every four pomodoros.</p>
+                    <input type="button" value="Start" id="button-info">
+                </div>
+            </div>
+            <section class="main" id="main">
+                <h1 class="text" id="text">Pomodoro</h1>
+                <section class="section">
+                    <div class="load">
+                        <p class="minute" id="minute">25:<sup class="second">00</sup></p>
+                    </div>
+                    <div class="cycles">
+                        <div id="cycles-1"></div>
+                        <div id="cycles-2"></div>
+                        <div id="cycles-3"></div>
+                        <div id="cycles-4"></div>
+                    </div>
+                    <div class="buttons">
+                        <input type="button" value="Start" id="button">
+                        <input type="button" value="" id="button-reload" onclick="rePlay()">
+                    </div>
+                </section>
+                <p class="text">Created using HTML, CSS and JavaScript by Javier S.</p>
+                <audio id="sound"><source src="./sound/sound.mp3" type="audio/mp3"></audio>
+            </section>
+            <section class="main-task" id="main-task">
+                <section class="nav">
+                    <img src="./imgs/back.svg" alt="back" id="close-task">
+                    <h2>Add New Task</h2>
+                </section>
+                <form for="add" onsubmit="return false">
+                    <input type="text" placeholder="Enter task" class="input" id="input" autocomplete="off">
+                    <input type="submit" value="Add" id="add">
+                </form>
+                <section class="task-padre" id="task-padre">
+                    <div class="task-hijos" id="0">
+                        <img src="./imgs/clear.svg" alt="clear" onclick="deleteTask(0)">
+                        <p class="name-task">Do programming homework</p>
+                        <p class="date-task">10 AM - 23 July</p>
+                    </div>
+                </section>
+            </section>
+            <section class="main-setting" id="main-setting">
+                <div class="title">
+                    <p>Settings</p>
+                    <img src="./imgs/clear.svg" alt="close" id="close-setting">
+                </div>
+                <div class="time">
+                    <p>TIME (MINUTES)</p>
+                    <form>
+                        <label for="pomodoro">pomodoro</label>
+                        <input type="number" value="25" id="pomodoro">
+                        <label for="s-break">short break</label>
+                        <input type="number" value="5" id="s-break">
+                        <label for="s-break">long break</label>
+                        <input type="number" value="15" id="l-break">
+                        <p class="error" id="msjError"></p>
+                        <input type="button" value="Apply" id="time">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <ul class="element">
+                <li class="menus" id="button-tasks">
+                    <p><img src="./imgs/tasks.svg" alt="tasks">Tasks</p>
+                </li>
+                <li class="decoration1" id="button-main"></li>
+                <li class="menus" id="button-setting">
+                    <p><img src="./imgs/settings.svg" alt="settings">Settings</p>
+                </li>
+            </ul>
+            <div class="decoration2"></div>
+        </footer>
+            <script src="./js/index.js"></script>
+            <script src="./js/setting.js"></script>
+            <script src="./js/tasks.js"></script>
+            <script src="./js/timer.js"></script>
+            <script src="./js/funcionalidad.js"></script>
+    </body>
+</html>

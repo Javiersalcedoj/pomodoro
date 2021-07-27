@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+html{
+    background-image: linear-gradient(225deg, #2161fd 0%, #6c009e 100%);
+}
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px ;
+    border-radius: 10px;
+    box-shadow:  5px 5px 40px gray;
+    background: white;
+    z-index: 3;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    p {
+        margin: 15px 0;
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+    input {
+        width: 100px;
+        height: 40px;
+        margin-left: calc(50% - 50px);
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        background: #6c009e;
+        cursor: pointer;
+    }
+    
+}
+.main {
+    display: flex;
+}
+.main-task{
+    display: none;
+}
+.main-setting {
+    display: none;
+}
+#cycles-1 {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#cycles-2 {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#cycles-3 {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#cycles-4 {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.footer{
+    position: absolute;
+    top: calc(100vh - 70px);
+    width: 100%;
+    height: 70px;
+    background: white;
+    box-shadow: 0px 0px 40px gray;
+    
+    .element {
+        display: flex;
+        margin-top: 7px;
+        width: 70px;
+        justify-content: space-evenly;
+        width: 100%;
+        list-style: none;
+        .menus {
+            width: 40px;
+            text-align: center;
+            p {
+                font-size: 0.8rem;
+                font-weight: 600;
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+            }
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .decoration1 {
+            position: relative;
+            bottom: 25px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+            &::after {
+                content: '';
+                position: absolute;
+                box-sizing: border-box;
+                top: calc((60px - 45px )/2);
+                right: calc((60px - 45px )/2);
+                width: 45px;
+                height: 45px;
+                border: 4px solid #6c009e;
+                border-radius: 50px;
+                z-index: 0;
+            }
+        }
+    }
+    .decoration2 {
+        position: relative;
+        bottom: 10px;
+        left: calc(50% - 60px);
+        width: 120px;
+        height: 4px;
+        border-radius: 5px;
+        background: grey;
+    }
+}

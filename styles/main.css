@@ -1,0 +1,127 @@
+.main {
+  height: calc(100vh - 70px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  height: 100px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+}
+
+.main .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 296.875px;
+  max-height: 500px;
+}
+
+.main .section .load {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75vw;
+  height: 75vw;
+  max-width: 300px;
+  max-height: 300px;
+  color: white;
+  border: 4px solid white;
+  border-bottom: 4px solid rgba(255, 0, 0, 0);
+  border-radius: 50%;
+}
+
+.main .section .minute {
+  font-size: 7.5rem;
+  font-weight: 100;
+}
+
+.main .section .second {
+  font-size: 4rem;
+}
+
+.main .section .cycles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.main .section .cycles div {
+  width: 7px;
+  height: 7px;
+  margin: 2px;
+  border-radius: 50%;
+}
+
+.main .section .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main .section .buttons #button {
+  width: 100px;
+  height: 35px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  border-radius: 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.main .section .buttons #button-reload {
+  display: none;
+  width: 40px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  background-image: url("../imgs/reloader.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

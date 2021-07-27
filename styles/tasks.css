@@ -1,0 +1,139 @@
+.main-task {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: calc(100vh - 70px);
+  margin: 0 5%;
+  z-index: 2;
+}
+
+.main-task .nav {
+  height: 50px;
+  text-align: center;
+}
+
+.main-task .nav #close-task {
+  position: absolute;
+  width: 20px;
+  top: 15px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.main-task .nav h2 {
+  width: 100vw;
+  line-height: 50px;
+  font-size: 1.8rem;
+}
+
+.main-task form .input {
+  width: 90vw;
+  height: 35px;
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  outline: none;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 2px solid #6c009e85;
+}
+
+.main-task form .input::-webkit-input-placeholder {
+  color: #6c009e85;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-task form .input:-ms-input-placeholder {
+  color: #6c009e85;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-task form .input::-ms-input-placeholder {
+  color: #6c009e85;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-task form .input::placeholder {
+  color: #6c009e85;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-task .task-padre {
+  margin-top: 15px;
+  width: 90vw;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.main-task .task-padre::-webkit-scrollbar {
+  width: 5px;
+  margin-left: 2px;
+  background-color: transparent;
+}
+
+.main-task .task-padre::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.main-task .task-padre::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: grey;
+}
+
+.main-task .task-padre .task-hijos {
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 60px;
+  padding: 10px 25px 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.main-task .task-padre .task-hijos img {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.main-task .task-padre .task-hijos p {
+  color: black;
+}
+
+.main-task .task-padre .task-hijos .name-task {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main-task .task-padre .task-hijos .date-task {
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+.main-task #add {
+  width: 90vw;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  background: #6c009e;
+  cursor: pointer;
+}
+/*# sourceMappingURL=tasks.css.map */
